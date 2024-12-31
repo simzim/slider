@@ -69,3 +69,10 @@ dots.forEach((dot, i) => {
         startSlider();
     })
 });
+
+// pridėtas kodas dėl funkcionalo įgyvendinimos 
+// skirto sustabdyti slider'io veikimą
+// su kursorium
+const slider = document.getElementById('slider');  
+slider.addEventListener('mouseover', stopSlider);  
+slider.addEventListener('mouseleave', startSlider);  
